@@ -1,0 +1,7 @@
+<launch>
+	<rosparam file="$(find pi_rover)/config/params.yaml" />
+
+	<node pkg="vnh5019_motor_controller" type="vnh5019_write_serial" name="motor_controller" />
+	<node pkg="pi_drone_server" type="pi_drone_server" name="pi_drone_server" />
+	<node pkg="pi_rover" type="pi_rover" name="pi_rover" />
+</launch>

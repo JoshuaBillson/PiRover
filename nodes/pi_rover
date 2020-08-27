@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+from pi_rover.pi_rover import pi_rover 
+
+if __name__ == "__main__":
+    pi_rover() 
