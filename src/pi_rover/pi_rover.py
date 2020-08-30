@@ -16,9 +16,9 @@ def get_direction(data):
 
     speed = 0
     if data.linear.x > 0:
-        speed = 100
+        speed = 50
     elif data.linear.x < 0:
-        speed = -100
+        speed = -50
 
     turn = 0
     if data.angular.z < 0:
